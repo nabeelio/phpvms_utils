@@ -8,6 +8,7 @@ phpVMS - Virtual Airline Administration Software
 
 phpVMS Utility Scripts
 
+---
 
 These are a set of bash scripts which you can utilize on the command line
 to:
@@ -19,3 +20,15 @@ to:
 You still have to run the /install/install.php (or update.php) files
 from your browser, but this takes care of the slowest peice - uploading
 all of the files.
+
+chmod +x ./phpvms_install.sh
+./phpvms_install.sh
+
+Note: It requires read/write permissions in the directory it's 
+running. It will create a temporary directory to download and
+extract the files it needs.
+
+AS A PRECAUTION, MAKE A COPY OF YOUR LOCAL.CONFIG.PHP FILE.
+I attempt to make a backup of it (core/local.config.php.1),
+I then restore the local.config.php file and remove the .1 file
+for security purposes. But JUST IN CASE!! Make a backup.
